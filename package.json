@@ -6,7 +6,8 @@
   "type": "commonjs",
   "scripts": {
     "test": "cucumber-js",
-    "report": "allure generate allure-results --clean -o allure-report"
+    "report": "allure generate allure-results --clean -o allure-report",
+    "postinstall": "npx playwright install"
   },
   "dependencies": {
     "@playwright/test": "^1.44.1",
