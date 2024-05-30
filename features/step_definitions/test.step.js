@@ -9,7 +9,7 @@ const csv = require('csv-parse/lib/sync');
 let browser, context, page;
 
 Given('I open the Sauce Demo website', async function () {
-  browser = await chromium.launch({ headless: false });
+  browser = await chromium.launch({ headless: true });
   context = await browser.newContext();
   page = await context.newPage();
   await page.goto('https://www.saucedemo.com/');
